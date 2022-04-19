@@ -1,19 +1,14 @@
 # Phase 2 Project Description
 
 
-## Project Overview
+## Project Overview and Business Problem 
 
-Black Families in King County, Washington
-
-Public Health – Seattle & King County is committed to working in stronger and better-resourced partnerships with community organizations and leaders to disrupt and dismantle racism. We recognize that historically and currently, King County has been complicit in maintaining and perpetuating structural racism, and that as an institution we must be a vital player in dismantling oppressive systems that are grounded in white supremacy.
-
-### Business Problem
 Client: National Association for Real Estate Brokers (NAREB) A black led organization that focuses on bringing together the minority professionals in the real estate industry to promote the meaningful exchange of ideas about our business and how best to serve their clientele. For this case the clientele will focus on black intergenerational families.
 
 How can home renovations increase the estimated value of homes for black families in King County, WA? (specifically focusing on intergenerational homes)
 
 
-### The Data
+### Data Preparation and Understanding 
 
 We begin by importing pandas, numpy, ols, plt, sns, durbin_watson, and statsmodels to analyze our data and perform our regressions. We also import our data as df.
 
@@ -21,7 +16,8 @@ In this analysis, we will perform multi-linear regression. We start by observing
 
 The first model iteration for our case will focus on square foot living, square foot above, and bathrooms. Before we can get to the analysis, we will drop 'zipcode' as a variable, because the numbers in zipcode are not useful to us in this analysis without context of what each zipcode means.
 
-We will convert our categorical data into something more useful for us in this analysis, and create dummy variablles that are considered categorical. 
+We will convert our categorical data into something more useful for us in this analysis, and create dummy variablles that are considered categorical.
+
 
 ### Model 1 
 
@@ -42,9 +38,12 @@ n this second iteration, we will keep square foot living from our first iteratio
 
 ### Model 3 
 
+In this third model iteration, we can see we have the best line of fit (0.509), and can also see that there is zero random chance with all three variables in our model. There is a low correlation between these variables.  
 
 
-### Conclusion
+### Conclusion and Next Steps
+
+In the future, we as analysts should sharpen our focus on our normality testing, by dropping the outliers in this data. I recommend continuing to explore square foot living space, square foot lot space, and bedrooms space as variables. They have the lowest random chance, they also offer the most opportunity for renovation in the future. I would also recommend, webscraping for public health data about what black families need as they grow intergenerational families.
 
 
 
