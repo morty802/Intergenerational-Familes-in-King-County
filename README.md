@@ -3,9 +3,11 @@
 
 ## Project Overview and Business Problem 
 
-Client: National Association for Real Estate Brokers (NAREB) A black led organization that focuses on bringing together the minority professionals in the real estate industry to promote the meaningful exchange of ideas about our business and how best to serve their clientele. For this case the clientele will focus on black intergenerational families.
+Black families face intergenerational challenges, due to systemic oppression that still impacts families today. Redlining, racism, discrimination, forced integration and segregation, and divestment has left black communities without the resources they need to survive, thrive, and build wealth. 
 
-How can home renovations increase the estimated value of homes for black families in King County, WA? (specifically focusing on intergenerational homes)
+The client for this project is the National Association for Real Estate Brokers (NAREB) A black led organization that focuses on bringing together the minority professionals in the real estate industry to promote the meaningful exchange of ideas about our business and how best to serve their clientele. For this case the clientele will focus on black intergenerational families. The audience for this work will focus on black professional real estate brokers, who want to increase the value of homes for black families who want to move into the area. 
+
+How can home renovations increase the estimated value of homes in preparation for an influx of black intergenerational families in King County, WA? 
 
 
 ### Data Preparation and Understanding 
@@ -34,11 +36,11 @@ The normality assumption states that the model residuals should follow a normal 
 
 ### Model 2 
 
-n this second iteration, we will keep square foot living from our first iteration, and analyze bedrooms and floors. These could be useful to our clients trying to purchase new homes. In this model our R-squared is 0.507, which has a better line of fit than the last model we saw. We can see as price increases, number of bedrooms increases, while square foot living and number of floors increases. In this iteration, floors has some random chance (more than bathrooms in the previous model). There is an acceptable level of homoscadascity in this second iteration. As we can see, there all correlations are below 0.7, which is acceptable.
+In this second iteration, we will keep square foot living from our first iteration, and analyze bedrooms and floors. These could be useful to our clients trying to purchase new homes. In this model our R-squared is 0.507, which has a better line of fit than the last model we saw. We can see as price increases, number of bedrooms increases, while square foot living and number of floors increases. In this iteration, floors has some random chance (more than bathrooms in the previous model). There is an acceptable level of homoscadascity in this second iteration. As we can see, there all correlations are below 0.7, which is acceptable.
 
 ### Model 3 
 
-In this third model iteration, we can see we have the best line of fit (0.509), and can also see that there is zero random chance with all three variables in our model. There is a low correlation between these variables.  
+In this third model iteration, we can see we have the best line of fit (0.509), and can also see that there is zero random chance with all three variables in our model, which is not what we saw in models 1 and 2. There is a low correlation between these variables, and there is homoscedascity. As we have seen in all of these results, the normality assumption cannot be confirmed unless values are dropped or logged into a more useful state for this analysis. 
 
 
 ### Conclusion and Next Steps
